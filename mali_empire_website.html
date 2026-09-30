@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Mali Empire</title>
+<style>
+:root{--sand:#f4dfb4;--gold:#d89b28;--brown:#4a2818;--clay:#a9512b;--ink:#24170f;--cream:#fff7e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,serif;background:var(--sand);color:var(--ink)}
+header{background:linear-gradient(135deg,#6b351f,#a9512b 55%,#d89b28);color:#fff7e6;padding:70px 7%;text-align:center;position:relative;overflow:hidden}
+header:after{content:"✦  ◇  ✦  ◇  ✦";position:absolute;bottom:14px;left:0;right:0;opacity:.45;letter-spacing:18px}
+h1{font-size:clamp(42px,8vw,82px);margin:0 0 10px;text-shadow:4px 4px #4a2818}.tag{font-size:20px}
+nav{position:sticky;top:0;z-index:5;background:#24170f;padding:12px;text-align:center}nav a{color:#ffe8ad;text-decoration:none;margin:0 12px;font-weight:bold}nav a:hover{color:#fff}
+main{max-width:1100px;margin:auto;padding:28px 18px}.intro,.card,.timeline{background:var(--cream);border:3px solid #b9782c;border-radius:18px;box-shadow:0 7px 0 #8b4b25;padding:24px;margin:24px 0}
+h2{color:#7a381e;font-size:32px;margin-top:0}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}.fact{background:#f0cc82;border-radius:14px;padding:18px;border:2px dashed #7a381e}.fact b{display:block;font-size:19px;color:#5b2c18;margin-bottom:7px}
+.timeline-item{border-left:5px solid var(--clay);padding:5px 0 18px 20px;margin-left:8px}.year{font-weight:bold;color:#a9512b;font-size:20px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:stretch}.mapbox{min-height:240px;background:radial-gradient(circle at 30% 35%,#e7b65a 0 8%,transparent 9%),radial-gradient(circle at 60% 65%,#c67c32 0 10%,transparent 11%),linear-gradient(150deg,#d9b06a,#8d532f);border-radius:16px;display:grid;place-items:center;color:#fff7e6;text-align:center;font-size:28px;border:3px solid #6b351f}
+button{background:#7a381e;color:white;border:0;border-radius:10px;padding:12px 16px;font-weight:bold;cursor:pointer}#factReveal{margin-top:14px;font-weight:bold;color:#7a381e}
+footer{text-align:center;padding:30px;background:#24170f;color:#ffe8ad;margin-top:35px}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr}nav a{display:inline-block;margin:5px 7px;font-size:14px}}
+</style>
+</head>
+<body>
+<header><div class="tag">🌍 West Africa • c. 1235–1600s</div><h1>The Mali Empire</h1><div class="tag">A story of trade, scholarship, culture, and powerful leaders</div></header>
+<nav><a href="#overview">Overview</a><a href="#mansa">Mansa Musa</a><a href="#trade">Trade</a><a href="#timbuktu">Timbuktu</a><a href="#timeline">Timeline</a></nav>
+<main>
+<section id="overview" class="intro hero-grid">
+<div><h2>What was the Mali Empire?</h2><p>The Mali Empire was one of the major empires of medieval West Africa. It grew around the upper Niger River and became wealthy through regional and trans-Saharan trade, especially in gold and salt.</p><p>Its influence included important cities and trading centers, and Islam became important among many rulers, merchants, and scholars while local traditions also continued.</p></div>
+<div class="mapbox">MALI<br>EMPIRE<br><small>West Africa</small></div>
+</section>
+<section class="card"><h2>⭐ Important Details</h2><div class="facts">
+<div class="fact"><b>Founded</b>Traditionally associated with Sundiata Keita and the founding of the empire around 1235.</div>
+<div class="fact"><b>Location</b>West Africa, centered around the Niger River and surrounding trade routes.</div>
+<div class="fact"><b>Wealth</b>Gold was a major source of wealth, alongside trade in salt and other goods.</div>
+<div class="fact"><b>Religion</b>Islam was important to many rulers and scholars, especially in major trading cities.</div>
+<div class="fact"><b>Language & Culture</b>Mandé/Malinké peoples and many other communities shaped the empire's culture.</div>
+<div class="fact"><b>Legacy</b>Timbuktu became famous as a center of learning, manuscripts, religion, and trade.</div>
+</div></section>
+<section id="mansa" class="card"><h2>👑 Mansa Musa</h2><p>Mansa Musa was one of Mali's most famous rulers. He ruled in the 14th century and is remembered for his wealth, leadership, and pilgrimage to Mecca.</p><p>His pilgrimage in 1324–1325 became famous across the wider Islamic world. He also supported learning and architecture; UNESCO notes that the Djingareyber Mosque in Timbuktu is linked to his return from the pilgrimage.</p><button onclick="reveal()">Show me a cool fact</button><div id="factReveal"></div></section>
+<section id="trade" class="card"><h2>🪙 Trade & Wealth</h2><p>Mali's location connected West African resources with trans-Saharan trade networks. Gold moved north while salt from Saharan areas moved south, and merchants also traded other goods.</p><div class="facts"><div class="fact"><b>Gold</b>A major export and an important source of imperial wealth.</div><div class="fact"><b>Salt</b>Highly valuable in West African trade and transported across the Sahara.</div><div class="fact"><b>Niger River</b>Helped support farming, travel, and cities.</div></div></section>
+<section id="timbuktu" class="card"><h2>📚 Timbuktu</h2><p>Timbuktu became a major intellectual and spiritual center, especially in the 15th and 16th centuries. UNESCO describes it as a crossroads for trade and a center for Islamic learning, with Sankore and other schools.</p><p>The city's famous mosques include Djingareyber, Sankore, and Sidi Yahia. Timbuktu was added to the UNESCO World Heritage List in 1988.</p></section>
+<section id="timeline" class="timeline"><h2>⏳ Timeline</h2>
+<div class="timeline-item"><div class="year">c. 1235</div><div>Sundiata Keita is traditionally associated with the founding of the Mali Empire.</div></div>
+<div class="timeline-item"><div class="year">1300s</div><div>Mali expands and becomes a major West African power.</div></div>
+<div class="timeline-item"><div class="year">1324–1325</div><div>Mansa Musa makes his famous pilgrimage to Mecca.</div></div>
+<div class="timeline-item"><div class="year">1400s–1500s</div><div>Timbuktu reaches a major period of intellectual and cultural importance.</div></div>
+<div class="timeline-item"><div class="year">1500s onward</div><div>Mali's power declines as Songhai becomes dominant in much of the region.</div></div>
+</section>
+<section class="card"><h2>🌟 Why the Mali Empire Matters</h2><p>The Mali Empire is important to African history because it shows the scale of West African states, the sophistication of long-distance trade, and the importance of scholarship and cities such as Timbuktu. Its history also connects Africa to wider networks across the Sahara and the Islamic world.</p></section>
+</main>
+<footer>Made as a Mali Empire history project • Sources: UNESCO World Heritage Centre</footer>
+<script>
+function reveal(){document.getElementById("factReveal").textContent="Mansa Musa's pilgrimage became famous far beyond West Africa and helped spread knowledge of Mali's wealth and power."}
+</script>
+</body>
+</html>
